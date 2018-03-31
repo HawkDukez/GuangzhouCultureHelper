@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lmmnb.guangzhouculturehelper.app.view.MainActivity">
+
+    <com.lmmnb.guangzhouculturehelper.app.view.widget.MyEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/et1">
+
+    </com.lmmnb.guangzhouculturehelper.app.view.widget.MyEditText>
+
+    <ImageButton
+        android:id="@+id/clearBtn"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignRight="@id/et1"
+        android:layout_alignTop="@id/et1"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/ic_close_black_24dp" />
+
+   <com.lmmnb.guangzhouculturehelper.app.view.widget.ExchangeButton
+       android:id="@+id/ExchangeButton"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/et1"
+       >
+
+   </com.lmmnb.guangzhouculturehelper.app.view.widget.ExchangeButton>
+
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:layout_below="@+id/ExchangeButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="0dp"
+        android:background="#ECECEC"
+        android:divider="@drawable/line"
+        android:dividerHeight="1sp"
+    />
+
+
+   <com.lmmnb.guangzhouculturehelper.app.view.widget.RecordButton
+       android:id="@+id/record"
+       android:layout_width="250dp"
+       android:layout_height="250dp"
+       android:layout_alignParentBottom="true"
+       android:layout_centerHorizontal="true"
+       android:layout_marginBottom="-10dp"
+       >
+
+   </com.lmmnb.guangzhouculturehelper.app.view.widget.RecordButton>
+
+
+</RelativeLayout>
+
+
